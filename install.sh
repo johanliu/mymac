@@ -15,9 +15,17 @@ brew cask install iterm2
 brew install ctags
 alias ctags="`brew --prefix`/bin/ctags"
 
+# Install cscope
+brew install cscope
+
+# Config ctags and cscope
+#!/bin/sh
+
+find . -name "*.h" -o -name "*.c"-o -name "*.cc" > cscope.files
+cscope -bkq -i cscope.files
+ctags -R
+
 
 # Install python2.7 and python3.6
 
 # Install golang
-
-# Install
