@@ -19,6 +19,7 @@ alias ctags="`brew --prefix`/bin/ctags"
 brew install cscope
 
 # Config ctags and cscope
+
 #!/bin/sh
 find . -name "*.h" -o -name "*.c"-o -name "*.cc" > cscope.files
 cscope -bkq -i cscope.files
@@ -30,6 +31,7 @@ ctags -R
 # Install golang
 
 # Set http_proxy for ss
+
 #!/bin/zsh
 export http_proxy=http://127.0.0.1:1087
 export https_proxy=http://127.0.0.1:1087
