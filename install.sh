@@ -20,7 +20,6 @@ brew install cscope
 
 # Config ctags and cscope
 #!/bin/sh
-
 find . -name "*.h" -o -name "*.c"-o -name "*.cc" > cscope.files
 cscope -bkq -i cscope.files
 ctags -R
@@ -29,3 +28,8 @@ ctags -R
 # Install python2.7 and python3.6
 
 # Install golang
+
+# Set http_proxy for ss
+#!/bin/zsh
+export http_proxy=http://127.0.0.1:1087
+export https_proxy=http://127.0.0.1:1087
