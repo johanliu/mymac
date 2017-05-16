@@ -1,6 +1,6 @@
-* mymac
+# mymac
 
-** app:
+* app:
 1. mindnode
 2. dash
 3. ulysses
