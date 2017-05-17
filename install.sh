@@ -17,7 +17,10 @@ alias ctags="`brew --prefix`/bin/ctags"
 
 
 # Install python2.7 and python3.6
+sudo easy_install pip
+pip install ipython
 
 # Install golang
 
-# Install
+# Install zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
